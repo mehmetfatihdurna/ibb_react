@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { withTranslation } from 'react-i18next'
 
+
 class Header extends Component {
   //displayName
   static displayName = "Header";
@@ -22,10 +23,10 @@ class Header extends Component {
   render() {
     return (
       <React.Fragment>
-        <nav className="navbar navbar-expand-md navbar-light bg-light">
+        <nav className="navbar navbar-expand-md navbar-dark bg-dark">
           <div className="container">
             <a className="navbar-brand" href="#">
-              Navbar
+              <i className={this.props.logo} />
             </a>
             <button
               className="navbar-toggler d-lg-none"
